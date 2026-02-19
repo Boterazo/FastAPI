@@ -2,8 +2,6 @@ from jose import jwt, JWTError
 from datetime import datetime, timedelta
 from passlib.context import CryptContext # libreria para encriptar contraseñas
 
-from dotenv import load_dotenv # para mis variables deentorno
-load_dotenv() # para mis variables deentorno
 import os # para mis variables deentorno
 
 
@@ -39,3 +37,4 @@ def comparar_password(password,password_DB):
     password = Encriptar.verify(password,password_DB)
 
     return password # retorna un booleano
+
