@@ -9,3 +9,6 @@ uvicorn
 python-multipart
 pathlib
 cloudinary
+bcrypt
+passlib
+
