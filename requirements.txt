@@ -9,8 +9,8 @@ uvicorn
 python-multipart
 pathlib
 cloudinary
-passlib==1.7.5
 bcrypt==3.2.2
+
 
 
 
