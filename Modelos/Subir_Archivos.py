@@ -1,7 +1,4 @@
 
-from dotenv import load_dotenv # para mis variables deentorno
-
-load_dotenv() # para mis variables deentorno
 import os # para mis variables deentorno
 
 import cloudinary
@@ -34,5 +31,6 @@ def Subir_Imagen_cloudinary(archivo:bytes,username:str,img_tipo:str,emai:str):
 
   #print("URL segura:", resultado['secure_url'])
   return resultado['secure_url']
+
 
 
