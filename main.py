@@ -16,10 +16,6 @@ from bson import json_util
 import json
 
 
-from dotenv import load_dotenv # para mis variables deentorno
-
-
-load_dotenv() # para mis variables deentorno
 
 import os # para mis variables deentorno
 
@@ -157,3 +153,4 @@ async def Obtener_Img(token = Depends(Desencriptar_token)):
             return {"No hay URL DE IMAGEN"}
     
 # para correr el server se usa uvicorn main:app --reload
+
