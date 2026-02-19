@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from passlib.context import CryptContext # libreria para encriptar contraseñas
 
 from dotenv import load_dotenv # para mis variables deentorno
-load_dotenv("../.env") # para mis variables deentorno
+load_dotenv() # para mis variables deentorno
 import os # para mis variables deentorno
 
 
@@ -37,4 +37,5 @@ def Encriptar_password(password: str):
 
 def comparar_password(password,password_DB):
     password = Encriptar.verify(password,password_DB)
+
     return password # retorna un booleano
