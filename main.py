@@ -30,7 +30,8 @@ app.add_middleware(
     allow_origins=[
         "https://boterazo.github.io",# para probar mi Frontend
         "http://127.0.0.1:5500",
-        "http://localhost:5500"
+        "http://localhost:5500",
+        "https://portafolio-jhon-yqwe.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],#Permite GET, POST, PUT, DELETE, etc.
@@ -153,4 +154,5 @@ async def Obtener_Img(token = Depends(Desencriptar_token)):
             return {"No hay URL DE IMAGEN"}
     
 # para correr el server se usa uvicorn main:app --reload
+
 
